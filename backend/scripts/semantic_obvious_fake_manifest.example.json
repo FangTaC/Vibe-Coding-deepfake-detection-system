@@ -1,0 +1,17 @@
+{
+  "dataset_name": "Semantic-Obvious-Fake-60",
+  "description": "答辩用语义异常样本清单模板",
+  "samples": [
+    {
+      "file": "fake/trump_maduro_swap_01.jpg",
+      "label": "fake",
+      "semantic_tags": ["PUBLIC_FIGURE_CONTEXT", "IDENTITY_SWAP_RISK", "SCENE_COMMONSENSE_CONFLICT"]
+    },
+    {
+      "file": "real/trump_press_01.jpg",
+      "label": "real",
+      "semantic_tags": []
+    }
+  ]
+}
+

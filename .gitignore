@@ -1,0 +1,47 @@
+# Python
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Runtime outputs
+backend/runtime/
+backend/logs/
+backend/storage/uploads/
+backend/storage/tasks.db
+backend/storage/*.db
+backend/storage/demo/reports/
+
+# Large or local model/data assets
+backend/storage/models/
+backend/storage/datasets/
+*.pt
+*.pth
+*.onnx
+*.ckpt
+*.safetensors
+
+# IDE and OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Temporary thesis/document build artifacts
+tmp_*/
+*.zip
+~$*

@@ -1,0 +1,35 @@
+{
+  "generated_at": "auto",
+  "samples": [
+    {
+      "category": "single_real",
+      "file": "single_real.png",
+      "expected_hint": "疑似真实"
+    },
+    {
+      "category": "single_fake",
+      "file": "single_fake.png",
+      "expected_hint": "疑似伪造"
+    },
+    {
+      "category": "no_face",
+      "file": "no_face.png",
+      "expected_hint": "需人工复核"
+    },
+    {
+      "category": "multi_face",
+      "file": "multi_face.png",
+      "expected_hint": "需人工复核或触发语义分析"
+    },
+    {
+      "category": "low_quality",
+      "file": "low_quality.png",
+      "expected_hint": "需人工复核"
+    },
+    {
+      "category": "public_figure_context",
+      "file": "public_figure_context.png",
+      "expected_hint": "触发公共人物候选或语义标记"
+    }
+  ]
+}

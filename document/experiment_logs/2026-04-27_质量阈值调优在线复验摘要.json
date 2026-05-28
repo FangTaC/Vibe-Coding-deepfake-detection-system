@@ -1,0 +1,49 @@
+{
+  "experiment_id": "2026-04-27-quality-threshold-online-verify-01",
+  "date": "2026-04-27",
+  "purpose": "验证低质量阈值下调后在线 API 批量评测效果",
+  "dataset": {
+    "name": "Celeb-DF-v2 extracted frames",
+    "input_dir": "D:\\datasets\\celebdf_eval_images",
+    "total_images": 40,
+    "real_count": 20,
+    "fake_count": 20
+  },
+  "config_change": {
+    "true_threshold": 0.05,
+    "fake_threshold": 0.5,
+    "low_quality_threshold_before": 0.35,
+    "low_quality_threshold_after": 0.15
+  },
+  "summary": {
+    "total_images": 40,
+    "labeled_images": 40,
+    "unlabeled_images": 0,
+    "correct": 26,
+    "incorrect": 14,
+    "accuracy": 0.65,
+    "real_count": 20,
+    "fake_count": 20,
+    "predicted_real": 11,
+    "predicted_fake": 27,
+    "real_accuracy": 0.45,
+    "fake_accuracy": 0.85,
+    "false_positive": 10,
+    "false_negative": 2,
+    "review_required": 2,
+    "failed_or_timeout": 0
+  },
+  "interpretation": {
+    "primary_finding": "大量 review 的主因是质量门控阈值过高，而不是融合阈值未生效",
+    "remaining_issue": "真实样本误报偏高，系统偏向判 fake",
+    "paper_ready": true
+  },
+  "artifacts_to_keep": [
+    "D:\\datasets\\celebdf_balanced_eval.csv",
+    "D:\\datasets\\celebdf_balanced_eval.json",
+    "terminal summary text",
+    "run command text",
+    "representative false positive images",
+    "representative correct fake images"
+  ]
+}
